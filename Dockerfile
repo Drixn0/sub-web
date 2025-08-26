@@ -1,5 +1,6 @@
 # ---- Dependencies ----
 FROM node:20-alpine AS build
+LABEL maintainer='Drixn <i@drixn.com>'
 WORKDIR /app
 COPY . .
 RUN yarn install
